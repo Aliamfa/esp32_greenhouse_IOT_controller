@@ -609,7 +609,7 @@ String readStringFromEeprom(int address) {
     data[i] = EEPROM.read(address + 1 + i);
   }
 
-  data[length] = '\\0';
+  data[length] = '\0';
   return String(data);
 }
 
