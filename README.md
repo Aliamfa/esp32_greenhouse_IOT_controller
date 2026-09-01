@@ -37,12 +37,8 @@ An ESP32-based controller for monitoring greenhouse conditions, controlling rela
 
 ```text
 esp32-greenhouse-controller/
-├── src/
-│   └── main.cpp
-├── platformio.ini
-├── README.md
-├── .gitignore
-└── LICENSE
+├── main.cpp
+└── README.md
 ```
 
 All application source code is intentionally kept in a single `main.cpp` file to make the project easy to inspect and understand.
