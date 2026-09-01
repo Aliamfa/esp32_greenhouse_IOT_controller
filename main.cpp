@@ -214,9 +214,9 @@ void setup() {
     while (!getLocalTime(&networkTimeInfo) && counter++ < 100) {
       delay(600);
     }
-    
+
     // Check for updated Wi-Fi credentials.
-    httpClient.begin(secureClient, urlGetWiFi);
+    httpClient.begin(secureClient, apiGetWiFiUrl);
     httpClient.addHeader("Content-Type", "application/json");
     int httpCode = httpClient.POST("{\"sn\":\""+ serialNumber +"\"}");
     if(httpCode == 200){
@@ -299,11 +299,11 @@ void updateTime(bool wifiConnected, bool internetAvailable) {
 void updateRelaySchedules(bool wifiConnected, bool internetAvailable) {
   // Get relay schedules from the server.
   if(millis() - lastTimerUpdateMs >= 60000 && wifiConnected && internetAvailable){
-    httpClient.begin(secureClient, urlGetTimerData);
+    httpClient.begin(secureClient, apiGetTimerUrl);
     httpClient.addHeader("Content-Type", "application/json");
     int httpCode = httpClient.POST("{\"sn\":\""+ serialNumber +"\"}");
     if(httpCode == 200){
-      
+
       String payload = httpClient.getString();
       StaticJsonDocument<512> timerJsonDocument;
       deserializeJson(timerJsonDocument, payload); 
@@ -359,7 +359,7 @@ void updateSensorData(bool wifiConnected, bool internetAvailable) {
     sensorJsonDocument["wl"] = waterLevel;
     serializeJson(sensorJsonDocument,sensorDataJson);
     if(wifiConnected && internetAvailable){
-      httpClient.begin(secureClient, urlSendSensorValue);
+      httpClient.begin(secureClient, apiSendSensorUrl);
       httpClient.addHeader("Content-Type", "application/json");
       int httpCode = httpClient.POST(sensorDataJson);
       if(httpCode == 200){
