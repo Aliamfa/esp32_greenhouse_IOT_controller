@@ -179,6 +179,7 @@ This project was developed as a team project.
 
 My contribution focused on the hardware and embedded-system integration aspects of the project, including:
 
+- I was responsible for the complete ESP32 firmware development
 - Contributing to the PCB design and hardware development
 - Participating in hardware testing and debugging
 - Working with the backend team to define and coordinate the APIs required for communication between the ESP32 controller and the server
