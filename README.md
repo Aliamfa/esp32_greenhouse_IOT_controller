@@ -184,3 +184,7 @@ My contribution focused on the hardware and embedded-system integration aspects 
 - Participating in hardware testing and debugging
 - Working with the backend team to define and coordinate the APIs required for communication between the ESP32 controller and the server
 - Supporting the integration between the embedded controller and the IoT infrastructure
+
+
+![PCB 3D View](Screenshot 2026-09-02 093311.png)
+
