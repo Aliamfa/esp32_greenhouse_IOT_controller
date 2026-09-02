@@ -186,6 +186,5 @@ My contribution focused on the hardware and embedded-system integration aspects 
 - Supporting the integration between the embedded controller and the IoT infrastructure
 
 
-![PCB 3D View](/Screenshot 2026-09-02 093311.png)
 ![PCB 3D View](images/pcb-3d.png)
 
