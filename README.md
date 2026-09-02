@@ -188,3 +188,10 @@ My contribution focused on the hardware and embedded-system integration aspects 
 
 ![PCB 3D View](images/pcb-3d.png)
 
+![PCB 3D View](images/main-server.png)
+
+![PCB 3D View](images/second.png)
+
+![PCB 3D View](images/third.png)
+
+![PCB 3D View](images/fourth.png)
