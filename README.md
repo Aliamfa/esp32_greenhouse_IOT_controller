@@ -172,3 +172,14 @@ This project was developed as an embedded systems and IoT project to practice th
 * Relay control
 
 The main goal was to build a practical controller that combines sensing, communication, data storage, and automatic control in a single ESP32-based system.
+
+## My Contribution
+
+This project was developed as a team project.
+
+My contribution focused on the hardware and embedded-system integration aspects of the project, including:
+
+- Contributing to the PCB design and hardware development
+- Participating in hardware testing and debugging
+- Working with the backend team to define and coordinate the APIs required for communication between the ESP32 controller and the server
+- Supporting the integration between the embedded controller and the IoT infrastructure
